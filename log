@@ -1,0 +1,20 @@
+Thu, Mar 27, 2025  7:29:58 PM: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'createList':
+list.c:33:20: error: statement with no effect [-Werror=unused-value]
+     newlista->data == NULL;
+                    ^
+list.c:34:20: error: statement with no effect [-Werror=unused-value]
+     newlista->next == NULL;
+                    ^
+list.c:35:20: error: statement with no effect [-Werror=unused-value]
+     newlista->prev == NULL;
+                    ^
+list.c:36:12: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return newlista;
+            ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+25021aa
