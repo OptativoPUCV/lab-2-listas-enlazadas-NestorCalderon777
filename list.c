@@ -48,8 +48,8 @@ void * nextList(List * list) {
     if(list->head == NULL) return NULL;
     if(list->head->next == NULL) return NULL;
     
-    list->current = list->head->next;
-    
+    list->current = list->head;
+
     return list->current->data;
 }
 
