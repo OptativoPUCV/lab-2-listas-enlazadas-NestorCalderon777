@@ -29,3 +29,12 @@ list.c:36:12: error: return from incompatible pointer type [-Werror=incompatible
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a48663e
+Thu, Mar 27, 2025  7:32:01 PM: 
+In file included from test.c:5:0:
+list.c: In function 'createList':
+list.c:37:12: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return newlista;
+            ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+20c1136
