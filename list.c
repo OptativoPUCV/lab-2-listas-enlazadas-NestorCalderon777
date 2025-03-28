@@ -115,7 +115,7 @@ void * popCurrent(List * list) {
     Node *remove = list->current;
     void *elem = remove->data;
 
-    if(list->head == remove && list->tail){
+    if(list->head == remove && list->tail == remove){
         list->head = NULL;
         list->tail = NULL;
         list->current = NULL;
